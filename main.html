@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Texto Secreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/secreto.png">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Encriptación/Desencriptación de Texto</h1>
+    </header>
+    <main>
+        
+        <div>
+            <h2>
+                ¡Bienvenidos a nuestra aplicación de encriptación de textos!
+            </h2>
+            <p>
+                En esta herramienta, podrás realizar operaciones de encriptación y desencriptación de texto de una manera fácil y segura. Con nuestra aplicación, podrás transformar tus mensajes de una forma única y divertida, creando así un código secreto que solo tú y tus amigos podrán descifrar.
+            </p>
+            <p>
+                Simplemente introduce el texto que deseas encriptar o desencriptar, elige la opción correspondiente y observa el resultado. ¡Es así de simple!
+            </p>
+        </div>
+
+        <div>
+            <h2>Reglas de Uso:</h2>
+            <ul>
+                <li>Usa solo letras minúsculas al ingresar texto. No funcionará con mayúsculas.</li>
+                <li>Evita usar letras con acentos o caracteres especiales, ya que pueden causar errores.</li>
+                <li>Asegúrate de que puedas encriptar y desencriptar tu texto. Debe ser fácil convertirlo de ida y vuelta.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Ejemplo</h2>
+            <p>Puedes utilizar el siguiente ejemplo para tener una idea de cómo se codifica el texto:</p>
+            <div class="example-text">
+                <p>"--- el secreto está a salvo con nosotros nadie puede descifrar nuestro mensaje codificado ---"</p>
+                <img src="images/feliz.png" alt="Feliz" />
+            </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left-box">
+                <label for="text-input">Inserta el texto a encriptar o desencriptar:</label>
+                <textarea id="text-input" name="text-input" oninput="hidePlaceholder()" rows="4"></textarea>
+                <div id="buttons">
+                    <button id="encryptButton">Encriptar</button>
+                    <button id="decryptButton">Desencriptar</button>
+                </div>
+            </div>
+            <div class="right-box">
+                <label>Resultado:</label>
+                <textarea id="result" readonly rows="4"></textarea>
+                <button id="copyButton" onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>¡Gracias por usar nuestra página!</p>
+        <a href="https://www.linkedin.com/in/bryan-jesus-martínez-perez-382826271" target="_blank">
+            <img src="images/linkedin.png" alt="Ícono de LinkedIn" />
+        </a>
+    </footer>
+</body>
+
+</html>
